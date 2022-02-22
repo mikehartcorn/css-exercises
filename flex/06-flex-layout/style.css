@@ -5,6 +5,8 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 img {
@@ -25,3 +27,44 @@ input {
   width: 400px;
   margin-bottom: 16px;
 }
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+button {
+  padding 8px 16px
+}
+
+.footer,
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  gap: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(65, 65, 65);
+}
+
+/* DONE, but I needed to cheat by looking at the solution again. Got a fair amount correct, but not the ul styling
+, and i couldve combined the footer and header styling initially*/
